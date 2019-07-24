@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=no,minimum-scale=1.0,maximum-scale=1.0">
+	<link rel="stylesheet" href="../../assets/plugins/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="../../ctrl/font/css/font-awesome.min.css">
+	<link rel="stylesheet" href="../../css/comm/base.css">
+	<link rel="stylesheet" href="../../ctrl/layer/skin/default/layer.css">
+	<link rel="stylesheet" href="../../css/comm/main.css">
+	<link rel="stylesheet" href="../../css/comm/mobile-main.css">
+	<script src="../../js/comm/jquery.min.js"></script>
+</head>
+<body>
+	<div class="head-top h-30 line-h-30 bor-b-eee">
+		<div class="container">
+			<div class="col-sm-9 col-sm-offset-1">
+				<div class="pull-right f-12">
+					<i class="icon-globe"></i>
+					<a class="pl-10 col-999" href="###">English</a>
+					<a class="pl-10 col-999" href="###">中文</a>
+					<a class="pl-10 col-333" href="../reg/login.html">登录</a>
+					<a class="pl-10 col-333" href="../reg/register.html">注册</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="nav-out">
+		<div class="container">
+			<div class="row clearfix">
+				<div class="col-md-2 clearfix">
+					<a class="pull-left logo" href="../index.html"><img class="pull-left" src="../../img/logo.png" alt=""></a>
+					<span class="pull-right nav-btn visible-sm visible-xs"><i class="icon-align-justify f-26"></i></span>
+				</div>
+				<div class="col-md-10">
+					<nav class="nav">
+						<ul class="clearfix">
+							<li><a href="../index.html">首页</a></li>
+							<li>
+								<a href="../product/db-use.html">产品与服务</a>
+								<ul class="dropdown">
+									<li><a href="../product/QD-OS.html">QD-OS</a></li>
+									<li><a href="../product/Data-entrepot.html">数据仓库规划建设</a></li>
+									<li><a href="../product/data-view.html">数据可视化</a></li>
+									<li><a href="../product/Data-project.html">数据模型设计服务</a></li>
+									<li><a href="../product/Data-collect.html">在线数据采集</a></li>
+								</ul>
+							</li>
+							<li>
+								<a href="../solution/solution.html">解决方案</a>
+								<ul class="dropdown" hidden>
+									<li><a href="###">产品一</a></li>
+									<li><a href="###">产品二</a></li>
+								</ul>
+							</li>
+							<li><a href="../share/share.html">技术分享</a></li>
+							<li hidden>
+								<a href="###">新闻</a>
+								<ul class="dropdown">
+									<li><a href="###">Product one</a></li>
+									<li><a href="###">Product two</a></li>
+								</ul>
+							</li>
+							<li><a href="../product/about.html">关于我们</a></li>
+							<li onclick="Subinfo()"><a href="###">业务咨询</a></li>
+
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div id="main">
+		<div class="sha-banner">
+			<div class="container">
+				<div class="banner-box">
+					<div class="banner-info">
+						<h2 class="f-34">技术分享</h2>
+						<p>根据企业的具体业务问题和需求，针对性的提供各行业大数据解决方案, 依托一系列大数据项目实践中打磨过的技术与产品，为各企业及政府机构提供优质服务。</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="content">
+			<div class="container">
+				<div class="col-sm-10 col-sm-offset-1">
+					<div class="new-detail pos-r">
+						<div class="news-data pull-left">
+							<p>01.</p>
+							<p>06</p>
+							<p class="f-14">2017</p>
+						</div>
+						<div class="news-text">
+							<div class="news-title">
+								<h3 class="f-30 col-black">Hadoop性能调优案例分享</h3>
+								<p class="f-14 col-999">技术博客</p>
+							</div>
+							<p>
+								Hadoop作为一个庞大的系统，其调优的过程是很复杂的。Hadoop虽然提供了许多调优参数，但数量庞大，开发者往往难以做出合适选择，更凸显了调优的难度。本文将通过一则Hadoop调优案例，与读者分享一下如何从全局出发，根据资源的使用情况，合理的确定调优目标，梳理调优点，实现最终的性能优化。
+							</p>
+							<h4><strong style="color:#006699">测试案例介绍</strong></h4>
+							<p>
+								TPCx-HS是TPC(http://www.tpc.org/)组织提供的Hadoop性能测试基准(http://www.tpc.org/tpcx-hs/default.asp)，用于测试大数据平台硬件、软件和Hadoop文件系统API兼容软件，对它们的性能、性价比、可用性以及耗电性提供客观评估。TPCx-HS本质上是Hadoop的TeraSort benchmark，通过对TB级数据进行排序，来测试HDFS和MapReduce框架对大规模数据的处理性能。
+							</p>
+							<p>
+								<span>TPCx HS由以下三部分组成：</span>
+							</p>
+							<p>
+								<strong>TeraGen：</strong><span>生成大量用于排序的数据并放置在HDFS。此阶段只有Map，没有Reduce。</span>
+							</p>
+							<p>
+								<strong>TeraGen：</strong><span>生成大量用于排序的数据并放置在HDFS。此阶段只有Map，没有Reduce。</span>
+							</p>
+							<p>
+								<strong>TeraGen：</strong><span>生成大量用于排序的数据并放置在HDFS。此阶段只有Map，没有Reduce。</span>
+							</p>
+						</div>
+						
+
+					</div>
+					
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
